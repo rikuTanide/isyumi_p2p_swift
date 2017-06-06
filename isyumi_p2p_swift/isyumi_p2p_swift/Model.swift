@@ -67,6 +67,7 @@ struct ItemRequestForAll {
 struct CreateGroup {
     var group_name:String
     var member_name:String
+    var device_id:String
 }
 
 // ここからViewで使う構造体
@@ -103,8 +104,9 @@ struct ItemSend {
 }
 
 
-// StateとStream
-class GroupSelector {
+// StateとViewへのStream
+class Model {
+    
     var group_list:[Group] = []
     var sent_group_join_request_list:[SentGroupJoinRequest] = []
     var received_group_join_request_list:[ReceivedGroupJoinRequest] = []
@@ -113,6 +115,8 @@ class GroupSelector {
     var member_list:[Member] = [] // 自分が所属しているグループに所属しているメンバー全員
     var item_list:[Item] = []
     var file_list:[ItemFile] = []
+    
+    var peer_id:String?
     
     // 参加しているグループ一覧を配信するObservable
     // 申請中も含まれる
@@ -249,7 +253,13 @@ class GroupSelector {
         member_list_observable.value = self.member_list.filter({$0.group_id == group_id})
     }
     
-    
+    func update() {
+        addSelectableGroupList()
+        addRequestableGroupList()
+        addItemList()
+        addReceivedGroupJoinRequestList()
+        addMemberList()
+    }
     
 }
 
@@ -258,13 +268,15 @@ class GroupSelector {
 
 class Direction {
     
-    let write = PublishSubject<ItemFile>()
+    let write = PublishSubject<ItemFile>() //writeというのはtmp領域からグループごとのファイルに移すことを言う
     let item_send = PublishSubject<ItemSend>()
     let group_select = PublishSubject<String>()
     let send_item_request = PublishSubject<ItemRequest>()
     let send_item_request_for_all = PublishSubject<ItemRequestForAll>()
     let send_login = PublishSubject<String>() // device_idを送る
     let send_group_join_request = PublishSubject<SentGroupJoinRequest>()
+    let send_accept_group_join_request = PublishSubject<(group_id:String,user_id:String)>()
+    let send_reject_group_join_request = PublishSubject<(group_id:String,user_id:String)>()
     let send_create_group = PublishSubject<CreateGroup>()
     let send_add_item = PublishSubject<Item>()
     let send_delete_item = PublishSubject<(group_id:String,item_id:String)>()
@@ -289,7 +301,7 @@ protocol RandomString {
     func generate(_ length:Int) -> String
 }
 
-protocol CurrentGroupRegistory {
+protocol CurrentGroupRegistry {
     func save(_ group_id:String)
     func read() -> String?
 }
