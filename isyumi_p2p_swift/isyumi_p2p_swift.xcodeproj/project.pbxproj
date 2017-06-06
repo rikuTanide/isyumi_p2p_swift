@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2763C681A554DBAD3B5B3490 /* Pods_isyumi_p2p_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73859DDBD5670C29E865162 /* Pods_isyumi_p2p_swiftTests.framework */; };
 		3283ACC81EE57DDC00AED06F /* isyumi_p2p_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3283ACBE1EE57DDC00AED06F /* isyumi_p2p_swift.framework */; };
 		3283ACCD1EE57DDC00AED06F /* isyumi_p2p_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283ACCC1EE57DDC00AED06F /* isyumi_p2p_swiftTests.swift */; };
 		3283ACCF1EE57DDC00AED06F /* isyumi_p2p_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3283ACC11EE57DDC00AED06F /* isyumi_p2p_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3283ACD91EE58A2100AED06F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283ACD81EE58A2100AED06F /* Model.swift */; };
+		C7EE70F91000E8467D41A7E3 /* Pods_isyumi_p2p_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160EBF11F9FD74D86E18D220 /* Pods_isyumi_p2p_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0052E059CB88D15AC2831C65 /* Pods-isyumi_p2p_swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swiftTests/Pods-isyumi_p2p_swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13F9D845BB39E00767EF6EC8 /* Pods-isyumi_p2p_swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swiftTests/Pods-isyumi_p2p_swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		160EBF11F9FD74D86E18D220 /* Pods_isyumi_p2p_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isyumi_p2p_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3283ACBE1EE57DDC00AED06F /* isyumi_p2p_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = isyumi_p2p_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3283ACC11EE57DDC00AED06F /* isyumi_p2p_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isyumi_p2p_swift.h; sourceTree = "<group>"; };
 		3283ACC21EE57DDC00AED06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3283ACC71EE57DDC00AED06F /* isyumi_p2p_swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = isyumi_p2p_swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3283ACCC1EE57DDC00AED06F /* isyumi_p2p_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isyumi_p2p_swiftTests.swift; sourceTree = "<group>"; };
 		3283ACCE1EE57DDC00AED06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3283ACD81EE58A2100AED06F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6DB9C8B9A8C30423774F0532 /* Pods-isyumi_p2p_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swift/Pods-isyumi_p2p_swift.release.xcconfig"; sourceTree = "<group>"; };
+		B73859DDBD5670C29E865162 /* Pods_isyumi_p2p_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isyumi_p2p_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEDBFC95F57D627EF8E55E5 /* Pods-isyumi_p2p_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swift/Pods-isyumi_p2p_swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EE70F91000E8467D41A7E3 /* Pods_isyumi_p2p_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3283ACC81EE57DDC00AED06F /* isyumi_p2p_swift.framework in Frameworks */,
+				2763C681A554DBAD3B5B3490 /* Pods_isyumi_p2p_swiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,8 @@
 				3283ACC01EE57DDC00AED06F /* isyumi_p2p_swift */,
 				3283ACCB1EE57DDC00AED06F /* isyumi_p2p_swiftTests */,
 				3283ACBF1EE57DDC00AED06F /* Products */,
+				EA8FFC5D34D6C26E87E286AA /* Pods */,
+				F1F74D58AF387AE109BC6944 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +87,7 @@
 			children = (
 				3283ACC11EE57DDC00AED06F /* isyumi_p2p_swift.h */,
 				3283ACC21EE57DDC00AED06F /* Info.plist */,
+				3283ACD81EE58A2100AED06F /* Model.swift */,
 			);
 			path = isyumi_p2p_swift;
 			sourceTree = "<group>";
@@ -84,6 +99,26 @@
 				3283ACCE1EE57DDC00AED06F /* Info.plist */,
 			);
 			path = isyumi_p2p_swiftTests;
+			sourceTree = "<group>";
+		};
+		EA8FFC5D34D6C26E87E286AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBFC95F57D627EF8E55E5 /* Pods-isyumi_p2p_swift.debug.xcconfig */,
+				6DB9C8B9A8C30423774F0532 /* Pods-isyumi_p2p_swift.release.xcconfig */,
+				0052E059CB88D15AC2831C65 /* Pods-isyumi_p2p_swiftTests.debug.xcconfig */,
+				13F9D845BB39E00767EF6EC8 /* Pods-isyumi_p2p_swiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1F74D58AF387AE109BC6944 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				160EBF11F9FD74D86E18D220 /* Pods_isyumi_p2p_swift.framework */,
+				B73859DDBD5670C29E865162 /* Pods_isyumi_p2p_swiftTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3283ACD21EE57DDC00AED06F /* Build configuration list for PBXNativeTarget "isyumi_p2p_swift" */;
 			buildPhases = (
+				98EB39D23974BE38440F702B /* [CP] Check Pods Manifest.lock */,
 				3283ACB91EE57DDC00AED06F /* Sources */,
 				3283ACBA1EE57DDC00AED06F /* Frameworks */,
 				3283ACBB1EE57DDC00AED06F /* Headers */,
 				3283ACBC1EE57DDC00AED06F /* Resources */,
+				E00C6CF5AF5E639A4E2DEAC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3283ACD51EE57DDC00AED06F /* Build configuration list for PBXNativeTarget "isyumi_p2p_swiftTests" */;
 			buildPhases = (
+				B755441364BF6569A2A7B7E4 /* [CP] Check Pods Manifest.lock */,
 				3283ACC31EE57DDC00AED06F /* Sources */,
 				3283ACC41EE57DDC00AED06F /* Frameworks */,
 				3283ACC51EE57DDC00AED06F /* Resources */,
+				19DD024B2AD0D28CF32AAC6A /* [CP] Embed Pods Frameworks */,
+				B41EB6BE52E3427B477E12BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +188,7 @@
 				TargetAttributes = {
 					3283ACBD1EE57DDC00AED06F = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					3283ACC61EE57DDC00AED06F = {
@@ -191,11 +232,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19DD024B2AD0D28CF32AAC6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isyumi_p2p_swiftTests/Pods-isyumi_p2p_swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EB39D23974BE38440F702B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B41EB6BE52E3427B477E12BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isyumi_p2p_swiftTests/Pods-isyumi_p2p_swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B755441364BF6569A2A7B7E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E00C6CF5AF5E639A4E2DEAC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isyumi_p2p_swift/Pods-isyumi_p2p_swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3283ACB91EE57DDC00AED06F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3283ACD91EE58A2100AED06F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +441,9 @@
 		};
 		3283ACD31EE57DDC00AED06F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEDBFC95F57D627EF8E55E5 /* Pods-isyumi_p2p_swift.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,13 +455,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.tanide.isyumi-p2p-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3283ACD41EE57DDC00AED06F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB9C8B9A8C30423774F0532 /* Pods-isyumi_p2p_swift.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -357,7 +482,9 @@
 		};
 		3283ACD61EE57DDC00AED06F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0052E059CB88D15AC2831C65 /* Pods-isyumi_p2p_swiftTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = isyumi_p2p_swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.tanide.isyumi-p2p-swiftTests";
@@ -368,7 +495,9 @@
 		};
 		3283ACD71EE57DDC00AED06F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F9D845BB39E00767EF6EC8 /* Pods-isyumi_p2p_swiftTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = isyumi_p2p_swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.tanide.isyumi-p2p-swiftTests";
@@ -396,6 +525,7 @@
 				3283ACD41EE57DDC00AED06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3283ACD51EE57DDC00AED06F /* Build configuration list for PBXNativeTarget "isyumi_p2p_swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +534,7 @@
 				3283ACD71EE57DDC00AED06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
