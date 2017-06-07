@@ -312,7 +312,3 @@ protocol P2P {
     func onReceive()-> Variable<ItemFile>
     func connect() -> Variable<String>
 }
-
-protocol Firebase{
-    
-}

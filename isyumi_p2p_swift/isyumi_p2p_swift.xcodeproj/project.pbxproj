@@ -13,6 +13,7 @@
 		3283ACCF1EE57DDC00AED06F /* isyumi_p2p_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3283ACC11EE57DDC00AED06F /* isyumi_p2p_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3283ACD91EE58A2100AED06F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283ACD81EE58A2100AED06F /* Model.swift */; };
 		3283ACDB1EE6E78500AED06F /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283ACDA1EE6E78500AED06F /* Controller.swift */; };
+		3283ACDD1EE7877A00AED06F /* Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3283ACDC1EE7877A00AED06F /* Impl.swift */; };
 		C7EE70F91000E8467D41A7E3 /* Pods_isyumi_p2p_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160EBF11F9FD74D86E18D220 /* Pods_isyumi_p2p_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		3283ACCE1EE57DDC00AED06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3283ACD81EE58A2100AED06F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3283ACDA1EE6E78500AED06F /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		3283ACDC1EE7877A00AED06F /* Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Impl.swift; sourceTree = "<group>"; };
 		6DB9C8B9A8C30423774F0532 /* Pods-isyumi_p2p_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swift/Pods-isyumi_p2p_swift.release.xcconfig"; sourceTree = "<group>"; };
 		B73859DDBD5670C29E865162 /* Pods_isyumi_p2p_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isyumi_p2p_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEDBFC95F57D627EF8E55E5 /* Pods-isyumi_p2p_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isyumi_p2p_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isyumi_p2p_swift/Pods-isyumi_p2p_swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				3283ACC21EE57DDC00AED06F /* Info.plist */,
 				3283ACD81EE58A2100AED06F /* Model.swift */,
 				3283ACDA1EE6E78500AED06F /* Controller.swift */,
+				3283ACDC1EE7877A00AED06F /* Impl.swift */,
 			);
 			path = isyumi_p2p_swift;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3283ACD91EE58A2100AED06F /* Model.swift in Sources */,
+				3283ACDD1EE7877A00AED06F /* Impl.swift in Sources */,
 				3283ACDB1EE6E78500AED06F /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,7 +4,7 @@ import Foundation
 class Controller {
 
     let model:Model
-    let direction = Direction()
+    let direction:Direction
     let local_item_listupper:LocalItemListUpper
     let device_id_registry:DeviceIDRegistry
     let random_string: RandomString
@@ -14,6 +14,7 @@ class Controller {
     
     init(
         model:Model,
+        direction:Direction,
         local_item_listupper:LocalItemListUpper,
         device_id_registry:DeviceIDRegistry,
         random_string:RandomString,
@@ -21,6 +22,7 @@ class Controller {
         p2p:P2P,
         firebase:Firebase){
         self.model = model
+        self.direction = direction
         self.local_item_listupper = local_item_listupper
         self.device_id_registry = device_id_registry
         self.random_string = random_string
@@ -255,7 +257,7 @@ class Controller {
             self.direction.item_send.onNext(item_send)
         }
     }
-    func onSoundRequestForAll(_ group_id:String,_ take_device_id:String,_ take_peer_id:String,_ item_id_list:[String]) {
+    func onItemRequestForAll(_ group_id:String,_ take_device_id:String,_ take_peer_id:String,_ item_id_list:[String]) {
         guard let _ = self.model.peer_id else {
             return
         }
