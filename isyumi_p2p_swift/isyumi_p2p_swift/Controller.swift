@@ -10,7 +10,6 @@ class Controller {
     let random_string: RandomString
     let current_group_registry:CurrentGroupRegistry
     let p2p:P2P
-    let firebase:Firebase
     
     init(
         model:Model,
@@ -19,8 +18,7 @@ class Controller {
         device_id_registry:DeviceIDRegistry,
         random_string:RandomString,
         current_group_registry:CurrentGroupRegistry,
-        p2p:P2P,
-        firebase:Firebase){
+        p2p:P2P){
         self.model = model
         self.direction = direction
         self.local_item_listupper = local_item_listupper
@@ -28,7 +26,6 @@ class Controller {
         self.random_string = random_string
         self.current_group_registry = current_group_registry
         self.p2p = p2p
-        self.firebase = firebase
     }
     
     

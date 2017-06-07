@@ -77,7 +77,7 @@ class CurrentGroupRegistoryImpl:CurrentGroupRegistry {
 
 class WriterImpl {
     
-    init(direction:Direction) {
+    init(_ direction:Direction) {
         let _ = direction.write.subscribe(onNext: {self.write($0.group_id,$0.item_id)})
     }
     
@@ -99,15 +99,15 @@ class WriterImpl {
 
 
 
-class P2PImpl {
+class P2PImpl:P2P {
     
     var peer:SKWPeer?
 
-    var controller:Controller
+    var controller:Controller!
     
-    init(_ direction:Direction ,_ controller:Controller) {
+    init(_ direction:Direction) {
         let _ = direction.item_send.subscribe(onNext: {self.send($0)})
-        self.controller = controller
+        
     }
     
     func send(_ item_send:ItemSend) {
@@ -137,9 +137,7 @@ class P2PImpl {
         
         
     }
-    func streamReceive(_ controller: Controller) {
-        self.controller = controller
-    }
+    
     func connect() -> Observable<String> {
         
         //Callback用
@@ -204,13 +202,12 @@ class FirebaseAdapterImpl {
     
     let user_id:String
     let direction:Direction
-    let controller:Controller
+    var controller:Controller!
     let database:Database
     
-    init(_ user_id:String , _ direction:Direction, _ controller:Controller) {
+    init(_ user_id:String , _ direction:Direction) {
         self.user_id = user_id
         self.direction = direction
-        self.controller = controller
         
         database = Database.database()
         let ref = database.reference()
@@ -328,7 +325,7 @@ class FirebaseAdapterImpl {
             case "on_other_device_login" :
                 let group_id = payload["group_id"]! as! String
                 let device_id = payload["device_id"]! as! String
-                controller.onOtherDeviceLogin(group_id, device_id)
+                self.controller.onOtherDeviceLogin(group_id, device_id)
                 return
                 
             case "on_group_create":

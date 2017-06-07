@@ -309,6 +309,5 @@ protocol CurrentGroupRegistry {
 // Reporter
 protocol P2P {
     
-    func onReceive()-> Variable<ItemFile>
-    func connect() -> Variable<String>
+    func connect() -> Observable<String>
 }
